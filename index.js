@@ -4,7 +4,7 @@ function kala() {
     let hours = String(dt.getHours() % 12 || 12 ).padStart(2,"0");
     let minutes = String(dt.getMinutes()).padStart(2, "0");
 
-    let period = hours >= 12 ? "PM" : "AM";
+    let period = hours >= 12 ? " AM" : " PM";
 
     let str = `${hours}:${minutes}${period}`;
 
